@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp">
+
+            <ImageView
+                android:id="@+id/cadastro_foto"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#00A8EC"
+                android:src="@drawable/person" />
+
+            <Button
+                android:id="@+id/botao_foto"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/fundo_camera" />
+
+        </RelativeLayout>
+
+
+        <EditText android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome"
+            android:id="@+id/cadastro_nome"
+            android:layout_margin="5dp"
+            android:inputType="text"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefone"
+            android:id="@+id/cadastro_telefone"
+            android:layout_margin="5dp"
+            android:inputType="phone"/>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp">
+            <EditText
+                android:id="@+id/cadastro_endereco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="Endereço" />
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_pin_drop_black_24dp"
+                android:id="@+id/localmapa"/>
+        </LinearLayout>
+         <EditText
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:hint="E-mail"
+             android:id="@+id/cadastro_email"
+             android:layout_margin="5dp"
+             android:inputType="textEmailAddress"/>
+
+
+    </LinearLayout>
+</ScrollView>

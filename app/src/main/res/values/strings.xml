@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NomeDaAgenda</string>
+    <string name="Login">Login</string>
+    <string name="username">Nome de usuário</string>
+    <string name="password">Senha</string>
+    <string name="sign_in">Entrar</string>
+    <string name="invalid_username">Usuário inválido</string>
+    <string name="invalid_password">Senha inválida</string>
+
+</resources>
