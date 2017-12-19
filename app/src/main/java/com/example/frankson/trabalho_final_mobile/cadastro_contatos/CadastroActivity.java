@@ -43,6 +43,10 @@ public class CadastroActivity extends AppCompatActivity implements CadastroView 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastrar__contato);
 
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle("Cadastro de contatos");
+        }
+
         ButterKnife.bind(this);
         cadastroPresenter = new CadastroPresenter(this);
         cadastroPresenter.mostraContato((ContatoEntity) getIntent().getSerializableExtra("exibir_contato"));

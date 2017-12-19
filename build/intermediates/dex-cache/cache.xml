@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/media/frankson/Backup/UFSCar/6° Periodo/Mobile/TrabalhoFinalDroids/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="618e5e0619139b746e7f407c1594d8b480819825">
+        <dex dex="/media/frankson/Backup/UFSCar/6° Periodo/Mobile/TrabalhoFinalDroids/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_255a0cfdf9be86a920d7f8a01e4cffd916a98073/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/frankson/Backup/UFSCar/6° Periodo/Mobile/TrabalhoFinalDroids/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/media/frankson/Backup/UFSCar/6° Periodo/Mobile/TrabalhoFinalDroids/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_58f9a1b5f5a81a3be98e63573e8d9975a7fdf7a4/classes.dex" />
+    </item>
+
+</items>

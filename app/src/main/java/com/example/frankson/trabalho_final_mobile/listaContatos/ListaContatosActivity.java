@@ -34,6 +34,10 @@ public class ListaContatosActivity extends AppCompatActivity implements ListaCon
         ButterKnife.bind(this);
         listaContatosPresenter = new ListaContatosPresenter(this);
 
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle("Lista de contatos");
+        }
+
     }
 
     @Override
