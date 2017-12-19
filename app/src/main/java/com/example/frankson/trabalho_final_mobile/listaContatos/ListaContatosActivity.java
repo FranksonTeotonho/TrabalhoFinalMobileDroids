@@ -35,7 +35,7 @@ public class ListaContatosActivity extends AppCompatActivity implements ListaCon
         listaContatosPresenter = new ListaContatosPresenter(this);
 
         if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("Lista de contatos");
+            getSupportActionBar().setTitle("Lista de contatos ");
         }
 
     }
