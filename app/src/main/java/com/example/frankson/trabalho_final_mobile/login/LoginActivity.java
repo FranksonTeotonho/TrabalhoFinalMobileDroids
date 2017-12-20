@@ -53,6 +53,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
     public void doLogin(){
         Intent abrirListaContatos = new Intent(LoginActivity.this, ListaContatosActivity.class);
         startActivity(abrirListaContatos);
+        this.finish();
     }
 
     @OnTextChanged(R.id.edit_text_username)

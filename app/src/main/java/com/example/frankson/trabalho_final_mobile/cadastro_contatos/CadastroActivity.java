@@ -45,6 +45,7 @@ public class CadastroActivity extends AppCompatActivity implements CadastroView 
 
         if (getSupportActionBar() != null) {
             getSupportActionBar().setTitle("Cadastro de contatos");
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 
         ButterKnife.bind(this);
@@ -79,6 +80,10 @@ public class CadastroActivity extends AppCompatActivity implements CadastroView 
 
                 setResult(Activity.RESULT_OK, resultado);
                 finish();
+
+            case android.R.id.home:
+                this.finish();
+                return true;
 
             default:
                 return super.onOptionsItemSelected(item);

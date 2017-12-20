@@ -52,7 +52,6 @@ public class ListaContatosActivity extends AppCompatActivity implements ListaCon
             case R.id.action_adicionar_contato:
                 Intent adicionarContato = new Intent(ListaContatosActivity.this, CadastroActivity.class);
                 startActivityForResult(adicionarContato, CODE);
-
             default:
                 return super.onOptionsItemSelected(item);
         }
