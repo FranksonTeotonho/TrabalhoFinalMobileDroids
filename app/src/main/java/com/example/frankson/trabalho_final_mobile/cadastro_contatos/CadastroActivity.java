@@ -120,10 +120,19 @@ public class CadastroActivity extends AppCompatActivity implements CadastroView 
 
     @OnClick(R.id.localmapa)
     public void abreMapa(){
-        Uri gmmIntentUri = Uri.parse("geo:0,0?q="+ campoEndereco.getText().toString());
-        Intent mapIntent = new Intent(Intent.ACTION_VIEW,gmmIntentUri);
-        mapIntent.setPackage("com.google.android.apps.maps");
-        startActivity(mapIntent);
+        //Uri gmmIntentUri = Uri.parse("geo:0,0?q="+ campoEndereco.getText().toString());
+        Intent mapIntent = new Intent(Intent.ACTION_VIEW);
+        mapIntent.setData(Uri.parse("geo:0,0?q="+ campoEndereco.getText().toString()));
+
+        if(mapIntent.resolveActivity(getPackageManager()) != null){
+            mapIntent.setPackage("com.google.android.apps.maps");
+            startActivity(mapIntent);
+        }else{
+            Toast.makeText(CadastroActivity.this, "Não há o recurso disponivel no device",Toast.LENGTH_LONG).show();
+        }
+
+
+
 
     }
 
